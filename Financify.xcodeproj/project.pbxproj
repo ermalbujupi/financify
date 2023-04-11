@@ -51,6 +51,12 @@
 		989D991029E48B99007E5F22 /* Financify */ = {
 			isa = PBXGroup;
 			children = (
+				98F2E64029E5634500DFFD5B /* Models */,
+				98F2E64129E5634900DFFD5B /* ViewModels */,
+				98F2E64229E5635200DFFD5B /* Views */,
+				98F2E64329E5635800DFFD5B /* Services */,
+				98F2E64429E5635F00DFFD5B /* Utils */,
+				98F2E64529E5638B00DFFD5B /* Assets */,
 				989D991129E48B99007E5F22 /* FinancifyApp.swift */,
 				989D991329E48B99007E5F22 /* ContentView.swift */,
 				989D991529E48B9A007E5F22 /* Assets.xcassets */,
@@ -65,6 +71,48 @@
 				989D991829E48B9A007E5F22 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98F2E64029E5634500DFFD5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98F2E64129E5634900DFFD5B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		98F2E64229E5635200DFFD5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98F2E64329E5635800DFFD5B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		98F2E64429E5635F00DFFD5B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		98F2E64529E5638B00DFFD5B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
