@@ -66,7 +66,6 @@
 				98F2E64429E5635F00DFFD5B /* Utils */,
 				98F2E64529E5638B00DFFD5B /* Assets */,
 				989D991129E48B99007E5F22 /* FinancifyApp.swift */,
-				989D991329E48B99007E5F22 /* ContentView.swift */,
 				989D991529E48B9A007E5F22 /* Assets.xcassets */,
 				989D991729E48B9A007E5F22 /* Preview Content */,
 			);
@@ -102,6 +101,13 @@
 		98F2E64229E5635200DFFD5B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				989D991329E48B99007E5F22 /* ContentView.swift */,
+				98F2E64E29E864D100DFFD5B /* Transaction */,
+				98F2E64F29E864D600DFFD5B /* Category */,
+				98F2E65029E864DA00DFFD5B /* Budget */,
+				98F2E65129E864E200DFFD5B /* SavingGoal */,
+				98F2E65329E864EF00DFFD5B /* Settings */,
+				98F2E65229E864EB00DFFD5B /* Report */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +131,48 @@
 			children = (
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		98F2E64E29E864D100DFFD5B /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		98F2E64F29E864D600DFFD5B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		98F2E65029E864DA00DFFD5B /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		98F2E65129E864E200DFFD5B /* SavingGoal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SavingGoal;
+			sourceTree = "<group>";
+		};
+		98F2E65229E864EB00DFFD5B /* Report */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		98F2E65329E864EF00DFFD5B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
