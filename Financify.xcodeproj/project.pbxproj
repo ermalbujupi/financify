@@ -17,6 +17,7 @@
 		98F2E64D29E8642F00DFFD5B /* SavingGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E64C29E8642F00DFFD5B /* SavingGoal.swift */; };
 		98F2E65729E869B600DFFD5B /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E65629E869B600DFFD5B /* TransactionListView.swift */; };
 		98F2E65B29E86BBA00DFFD5B /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E65A29E86BBA00DFFD5B /* TransactionViewModel.swift */; };
+		98F2E65D29E89B2600DFFD5B /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98F2E65C29E89B2600DFFD5B /* GoogleService-Info-2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		98F2E64C29E8642F00DFFD5B /* SavingGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingGoal.swift; sourceTree = "<group>"; };
 		98F2E65629E869B600DFFD5B /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
 		98F2E65A29E86BBA00DFFD5B /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		98F2E65C29E89B2600DFFD5B /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				98F2E64529E5638B00DFFD5B /* Assets */,
 				989D991129E48B99007E5F22 /* FinancifyApp.swift */,
 				989D991529E48B9A007E5F22 /* Assets.xcassets */,
+				98F2E65C29E89B2600DFFD5B /* GoogleService-Info-2.plist */,
 				989D991729E48B9A007E5F22 /* Preview Content */,
 			);
 			path = Financify;
@@ -241,6 +244,7 @@
 			files = (
 				989D991929E48B9A007E5F22 /* Preview Assets.xcassets in Resources */,
 				989D991629E48B9A007E5F22 /* Assets.xcassets in Resources */,
+				98F2E65D29E89B2600DFFD5B /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

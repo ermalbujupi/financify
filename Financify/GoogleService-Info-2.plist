@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>134829314113-c0ja9vig9ackmdgi1j000f7vg6588i3k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.134829314113-c0ja9vig9ackmdgi1j000f7vg6588i3k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDyJ_xf5JjDrAhGFYMNSOTSt5UlL3yztp8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>134829314113</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ermalbujupaj.Financify</string>
+	<key>PROJECT_ID</key>
+	<string>financify-ebf55</string>
+	<key>STORAGE_BUCKET</key>
+	<string>financify-ebf55.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:134829314113:ios:d7b4d22cf95bfb84d776c0</string>
+</dict>
+</plist>
