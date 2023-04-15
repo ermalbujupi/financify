@@ -22,7 +22,7 @@ class FirebaseService {
     
     // MARK: Fetch transactions
     
-    func fetchTransactions() -> Future<[Transaction], Error> {
+    public func fetchTransactions() -> Future<[Transaction], Error> {
         return Future { promise in
             let collection = self.db.collection(self.transactionsCollection)
             collection.getDocuments { querySnapshot, error in

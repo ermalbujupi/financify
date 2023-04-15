@@ -24,7 +24,7 @@ class TransactionViewModel: ObservableObject {
         loadTransactions()
     }
     
-    private func loadTransactions() {
+    public func loadTransactions() {
         isLoading = true
         FirebaseService.shared.fetchTransactions()
             .receive(on: DispatchQueue.main)
