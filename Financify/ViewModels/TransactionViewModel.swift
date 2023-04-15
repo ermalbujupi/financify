@@ -14,4 +14,12 @@ class TransactionViewModel: ObservableObject {
     @Published var filteredTransactions: [Transaction] = []
     
     private var cancellables = Set<AnyCancellable>()
+    
+    init() {
+        loadTransactions()
+    }
+    
+    private func loadTransactions() {
+        
+    }
 }
