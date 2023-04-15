@@ -43,4 +43,22 @@ class TransactionViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
+    
+    public func addTransaction(_ transaction: Transaction) {
+        isLoading = true
+        databaseService.addTransaction(transaction)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] completion in
+                guard let self = self else { return }
+                self.isLoading = false
+                switch completion {
+                case .failure(let error):
+                    self.error = error
+                case .finished:
+                    self.loadTransactions()
+                }
+            } receiveValue: { _ in }
+            .store(in: &cancellables)
+
+    }
 }
