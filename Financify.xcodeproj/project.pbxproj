@@ -11,13 +11,14 @@
 		989D991429E48B99007E5F22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D991329E48B99007E5F22 /* ContentView.swift */; };
 		989D991629E48B9A007E5F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989D991529E48B9A007E5F22 /* Assets.xcassets */; };
 		989D991929E48B9A007E5F22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989D991829E48B9A007E5F22 /* Preview Assets.xcassets */; };
+		98CD5BED29E8B11D0098B402 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CD5BEC29E8B11D0098B402 /* FirebaseService.swift */; };
+		98CD5BEF29EABC490098B402 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98CD5BEE29EABC490098B402 /* GoogleService-Info.plist */; };
 		98F2E64729E8632C00DFFD5B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E64629E8632C00DFFD5B /* Transaction.swift */; };
 		98F2E64929E863BE00DFFD5B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E64829E863BE00DFFD5B /* Category.swift */; };
 		98F2E64B29E863EE00DFFD5B /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E64A29E863EE00DFFD5B /* Budget.swift */; };
 		98F2E64D29E8642F00DFFD5B /* SavingGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E64C29E8642F00DFFD5B /* SavingGoal.swift */; };
 		98F2E65729E869B600DFFD5B /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E65629E869B600DFFD5B /* TransactionListView.swift */; };
 		98F2E65B29E86BBA00DFFD5B /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E65A29E86BBA00DFFD5B /* TransactionViewModel.swift */; };
-		98F2E65D29E89B2600DFFD5B /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98F2E65C29E89B2600DFFD5B /* GoogleService-Info-2.plist */; };
 		D8F4037F4D1D3608B3FBB602 /* Pods_Financify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00780F01594B56F80CD1B52 /* Pods_Financify.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,13 +29,14 @@
 		989D991329E48B99007E5F22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		989D991529E48B9A007E5F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		989D991829E48B9A007E5F22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98CD5BEC29E8B11D0098B402 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		98CD5BEE29EABC490098B402 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98F2E64629E8632C00DFFD5B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		98F2E64829E863BE00DFFD5B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		98F2E64A29E863EE00DFFD5B /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		98F2E64C29E8642F00DFFD5B /* SavingGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingGoal.swift; sourceTree = "<group>"; };
 		98F2E65629E869B600DFFD5B /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
 		98F2E65A29E86BBA00DFFD5B /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
-		98F2E65C29E89B2600DFFD5B /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		B1379F4C5F94F4043F140C3D /* Pods-Financify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Financify.release.xcconfig"; path = "Target Support Files/Pods-Financify/Pods-Financify.release.xcconfig"; sourceTree = "<group>"; };
 		C00780F01594B56F80CD1B52 /* Pods_Financify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Financify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,7 +59,6 @@
 				8F82FD6B17E31818A200D732 /* Pods-Financify.debug.xcconfig */,
 				B1379F4C5F94F4043F140C3D /* Pods-Financify.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,7 +99,7 @@
 				98F2E64529E5638B00DFFD5B /* Assets */,
 				989D991129E48B99007E5F22 /* FinancifyApp.swift */,
 				989D991529E48B9A007E5F22 /* Assets.xcassets */,
-				98F2E65C29E89B2600DFFD5B /* GoogleService-Info-2.plist */,
+				98CD5BEE29EABC490098B402 /* GoogleService-Info.plist */,
 				989D991729E48B9A007E5F22 /* Preview Content */,
 			);
 			path = Financify;
@@ -148,6 +149,7 @@
 		98F2E64329E5635800DFFD5B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				98CD5BEC29E8B11D0098B402 /* FirebaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -271,7 +273,7 @@
 			files = (
 				989D991929E48B9A007E5F22 /* Preview Assets.xcassets in Resources */,
 				989D991629E48B9A007E5F22 /* Assets.xcassets in Resources */,
-				98F2E65D29E89B2600DFFD5B /* GoogleService-Info-2.plist in Resources */,
+				98CD5BEF29EABC490098B402 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +330,7 @@
 				989D991229E48B99007E5F22 /* FinancifyApp.swift in Sources */,
 				98F2E64D29E8642F00DFFD5B /* SavingGoal.swift in Sources */,
 				98F2E64B29E863EE00DFFD5B /* Budget.swift in Sources */,
+				98CD5BED29E8B11D0098B402 /* FirebaseService.swift in Sources */,
 				98F2E64729E8632C00DFFD5B /* Transaction.swift in Sources */,
 				98F2E65729E869B600DFFD5B /* TransactionListView.swift in Sources */,
 				98F2E64929E863BE00DFFD5B /* Category.swift in Sources */,
