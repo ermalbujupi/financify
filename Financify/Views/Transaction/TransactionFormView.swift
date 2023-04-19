@@ -17,7 +17,7 @@ struct TransactionFormView: View {
     @State private var amount = ""
     @State private var transactionType: TransactionType = .income
     @State private var date = Date()
-    @State private var selectedCategory: Category?
+    @State private var selectedCategory: Category = Category(id: "1", name: "Food", type: TransactionType.expense, iconName: "cart.fill")
 
     var body: some View {
         NavigationView {
@@ -30,7 +30,9 @@ struct TransactionFormView: View {
                     Text("Expense").tag(TransactionType.expense)
                 }
                 .pickerStyle(.automatic)
+                
                 DatePicker("Date", selection: $date, displayedComponents: .date)
+                
                 Picker("Category", selection: $selectedCategory) {
                     ForEach(viewModel.defaultCategories.filter { $0.type == transactionType }, id: \.id) { category in
                         HStack {
@@ -39,7 +41,6 @@ struct TransactionFormView: View {
                         }.tag(category)
                     }
                 }
-                .pickerStyle(.automatic)
             }
             .navigationBarTitle("Add Transaction", displayMode: .inline)
             .navigationBarItems(
@@ -55,7 +56,7 @@ struct TransactionFormView: View {
 
     private func saveTransaction() {
         let transactionAmount = Double(amount) ?? 0.0
-        let transaction = Transaction(id: UUID().uuidString, type: transactionType, category: selectedCategory!, amount: transactionAmount, currency: "EUR", date: date)
+        let transaction = Transaction(id: UUID().uuidString, type: transactionType, category: selectedCategory, amount: transactionAmount, currency: "EUR", date: date)
         viewModel.addTransaction(transaction)
         presentationMode.wrappedValue.dismiss()
     }
