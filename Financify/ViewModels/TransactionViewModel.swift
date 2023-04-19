@@ -19,6 +19,14 @@ class TransactionViewModel: ObservableObject {
     private var databaseService: FirebaseService
     private var cancellables = Set<AnyCancellable>()
     
+    let defaultCategories: [Category] = [
+        Category(id: "1", name: "Food", type: .expense, iconName: "cart.fill"),
+        Category(id: "2", name: "Social Life", type: .expense, iconName: "person.2.fill"),
+        Category(id: "3", name: "Health", type: .expense, iconName: "heart.fill"),
+        Category(id: "4", name: "Entertainment", type: .expense, iconName: "gamecontroller.fill"),
+        // Add more categories as needed
+    ]
+    
     init(databaseService: FirebaseService = FirebaseService.shared) {
         self.databaseService = databaseService
         loadTransactions()
