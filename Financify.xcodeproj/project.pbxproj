@@ -14,6 +14,7 @@
 		98CD5BED29E8B11D0098B402 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CD5BEC29E8B11D0098B402 /* FirebaseService.swift */; };
 		98CD5BEF29EABC490098B402 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98CD5BEE29EABC490098B402 /* GoogleService-Info.plist */; };
 		98CD5BF129EACB200098B402 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CD5BF029EACB200098B402 /* TransactionRow.swift */; };
+		98CD5BF329EAD4420098B402 /* TransactionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CD5BF229EAD4420098B402 /* TransactionFormView.swift */; };
 		98F2E64729E8632C00DFFD5B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E64629E8632C00DFFD5B /* Transaction.swift */; };
 		98F2E64929E863BE00DFFD5B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E64829E863BE00DFFD5B /* Category.swift */; };
 		98F2E64B29E863EE00DFFD5B /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2E64A29E863EE00DFFD5B /* Budget.swift */; };
@@ -33,6 +34,7 @@
 		98CD5BEC29E8B11D0098B402 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		98CD5BEE29EABC490098B402 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98CD5BF029EACB200098B402 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		98CD5BF229EAD4420098B402 /* TransactionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFormView.swift; sourceTree = "<group>"; };
 		98F2E64629E8632C00DFFD5B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		98F2E64829E863BE00DFFD5B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		98F2E64A29E863EE00DFFD5B /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				98F2E65629E869B600DFFD5B /* TransactionListView.swift */,
 				98CD5BF029EACB200098B402 /* TransactionRow.swift */,
+				98CD5BF229EAD4420098B402 /* TransactionFormView.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				98F2E64D29E8642F00DFFD5B /* SavingGoal.swift in Sources */,
 				98F2E64B29E863EE00DFFD5B /* Budget.swift in Sources */,
 				98CD5BED29E8B11D0098B402 /* FirebaseService.swift in Sources */,
+				98CD5BF329EAD4420098B402 /* TransactionFormView.swift in Sources */,
 				98CD5BF129EACB200098B402 /* TransactionRow.swift in Sources */,
 				98F2E64729E8632C00DFFD5B /* Transaction.swift in Sources */,
 				98F2E65729E869B600DFFD5B /* TransactionListView.swift in Sources */,
