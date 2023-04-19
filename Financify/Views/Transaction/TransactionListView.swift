@@ -11,31 +11,46 @@ struct TransactionListView: View {
     
     @ObservedObject var viewModel = TransactionViewModel()
     
+    @State private var showingTransactionForm = false
+    
     var body: some View {
         NavigationView {
-            List {
-                if viewModel.isLoading {
-                    ProgressView()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                } else if let error = viewModel.error {
-                    VStack {
-                        Text("Error: \(error.localizedDescription)")
-                            .foregroundColor(.red)
-                            .multilineTextAlignment(.center)
+            VStack {
+                List {
+                    if viewModel.isLoading {
+                        ProgressView()
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    } else if let error = viewModel.error {
+                        VStack {
+                            Text("Error: \(error.localizedDescription)")
+                                .foregroundColor(.red)
+                                .multilineTextAlignment(.center)
+                                .padding()
+                            Button("Retry") {
+                                viewModel.loadTransactions()
+                            }
                             .padding()
-                        Button("Retry") {
-                            viewModel.loadTransactions()
                         }
-                        .padding()
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                } else {
-                    ForEach(viewModel.transactions, id: \.id) { transaction in
-                        TransactionRow(transaction: transaction)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    } else {
+                        ForEach(viewModel.transactions, id: \.id) { transaction in
+                            TransactionRow(transaction: transaction)
+                        }
                     }
                 }
             }
-            .navigationTitle("Transactions")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showingTransactionForm.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $showingTransactionForm) {
+                TransactionFormView(viewModel: viewModel)
+            }
         }
     }
 }
