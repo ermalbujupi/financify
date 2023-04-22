@@ -67,6 +67,20 @@ class TransactionViewModel: ObservableObject {
                 }
             } receiveValue: { _ in }
             .store(in: &cancellables)
-
+    }
+    
+    public func deleteTransaction(at offsets: IndexSet) {
+        let transaction = transactions[offsets.first!]
+        
+        databaseService.deleteTransaction(withId: transaction.id) { result in
+            switch result {
+            case .success:
+                DispatchQueue.main.async {
+                    self.transactions.remove(atOffsets: offsets)
+                }
+            case .failure(let error):
+                print("Error deleting the transaction: \(error)")
+            }
+        }
     }
 }

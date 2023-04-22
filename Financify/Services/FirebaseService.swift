@@ -58,4 +58,15 @@ class FirebaseService {
         }
     }
     
+    // MARK: Delete transaction
+    
+    func deleteTransaction(withId id: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        db.collection(transactionsCollection).document(id).delete() { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(()))
+            }
+        }
+    }
 }

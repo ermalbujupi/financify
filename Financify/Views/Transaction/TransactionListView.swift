@@ -33,8 +33,11 @@ struct TransactionListView: View {
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     } else {
-                        ForEach(viewModel.transactions, id: \.id) { transaction in
-                            TransactionRow(transaction: transaction)
+                        Section {
+                            ForEach(viewModel.transactions, id: \.id) { transaction in
+                                TransactionRow(transaction: transaction)
+                            }
+                            .onDelete(perform: viewModel.deleteTransaction)
                         }
                     }
                 }
